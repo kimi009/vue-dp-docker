@@ -1,5 +1,5 @@
 #!/bin/bash
-WORK_PATH = '/web/vue-server-end'
+WORK_PATH = '/web/vue-server'
 
 cd WORK_PATH
 
