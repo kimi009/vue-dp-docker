@@ -11,5 +11,5 @@ docker build -t vue-server:1.0 .
 echo '停止旧容器并删除旧容器'
 docker stop vue-server-container
 docker rm vue-server-container
-echo '启动新容器'
+echo '启动新容器,向外暴露3009，映射宿主的3009 -d是后台运行'
 docker container run -p 3009:3009 --name vue-server-container -d vue-server:1.0
