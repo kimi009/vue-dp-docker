@@ -6,7 +6,7 @@ git reset --hard origin/master
 git clean -f
 echo '拉取最新的代码'
 git pull origin master
-echo '开始构建'
+echo '开始构建，从当前目录开始，构建为vue-server'
 docker build -t vue-server:1.0 .
 echo '停止旧容器并删除旧容器'
 docker stop vue-server-container
